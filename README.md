@@ -14,8 +14,28 @@
 
 [Github OAuth](https://docs.github.com/en/developers/apps/creating-an-oauth-app)
 
+[Spring](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-documentation)
+
 ##工具
 
 [Git](https://git-scm.com/downloads)
 
 [Visual Paradigm](https://www.visual-paradigm.com)
+
+##脚本
+
+```sql
+create table USER
+(
+	ID INT auto_increment,
+	ACCOUNT_ID VARCHAR(100),
+	NAME VARCHAR(50),
+	TOKEN CHAR(36),
+	GMT_CREATE BIGINT,
+	GMT_MODIFIED BIGINT,
+	constraint USER_PK
+		primary key (ID)
+);
+
+
+```
