@@ -16,11 +16,17 @@
 
 [Spring](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-documentation)
 
+[Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf)
+
 ##工具
 
 [Git](https://git-scm.com/downloads)
 
 [Visual Paradigm](https://www.visual-paradigm.com)
+
+[Flyway](https://flywaydb.org/documentation/getstarted/firststeps/maven)
+
+[Lombok](https://projectlombok.org/)
 
 ##脚本
 
@@ -38,4 +44,7 @@ create table USER
 );
 
 
+```
+```bash
+mvn flyway:migrate
 ```
