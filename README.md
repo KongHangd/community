@@ -18,6 +18,8 @@
 
 [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf)
 
+[Spring MVC](https://docs.spring.io/spring-framework/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-config)
+
 ##工具
 
 [Git](https://git-scm.com/downloads)
