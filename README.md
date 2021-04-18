@@ -30,6 +30,8 @@
 
 [Lombok](https://projectlombok.org/)
 
+[Postman](chrome-extension://coohjcphdfgbiolnekdpbcijmhambjff/index.html)
+
 ##脚本
 
 ```sql
