@@ -30,7 +30,7 @@
 
 [Lombok](https://projectlombok.org/)
 
-[Postman](chrome-extension://coohjcphdfgbiolnekdpbcijmhambjff/index.html)
+[Postman](https://chrome.google.com/webstore/detail/coohjcphdfgbioInekdpbcijmhambjff)
 
 **脚本**
 
