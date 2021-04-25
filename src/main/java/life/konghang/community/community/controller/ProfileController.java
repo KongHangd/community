@@ -1,9 +1,7 @@
 package life.konghang.community.community.controller;
 
-import life.konghang.community.community.dto.NotificationDTO;
+
 import life.konghang.community.community.dto.PaginationDTO;
-import life.konghang.community.community.mapper.UserMapper;
-import life.konghang.community.community.model.Notification;
 import life.konghang.community.community.model.User;
 import life.konghang.community.community.service.NotificationService;
 import life.konghang.community.community.service.QuestionService;
@@ -13,10 +11,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
+
 
 @Controller
 public class ProfileController {
