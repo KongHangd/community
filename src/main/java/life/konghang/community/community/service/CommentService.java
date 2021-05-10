@@ -127,11 +127,12 @@ public class CommentService {
         if (dbComment == null) {
             throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
         }
+
         //创建通知
         Notification notification = new Notification();
         notification.setGmtCreate(System.currentTimeMillis());
         notification.setType(NotificationTypeEnum.LIKE_COMMENT.getType());
-        notification.setOuterId(dbComment.getId());
+        notification.setOuterId(dbComment.getParentId());
         notification.setNotifier(user.getId());
         notification.setStatus(NotificationStatusEnum.UNREAD.getStatus());
         notification.setReceiver(dbComment.getCommentator());
