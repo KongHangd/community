@@ -120,4 +120,23 @@ public class CommentService {
 
         return commentDTOS;
     }
+
+    public void insertLikeCount(Comment comment,User user) {
+        commentExtMapper.incLikeCount(comment);
+        Comment dbComment = commentMapper.selectByPrimaryKey(comment.getId());
+        if (dbComment == null) {
+            throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
+        }
+        //创建通知
+        Notification notification = new Notification();
+        notification.setGmtCreate(System.currentTimeMillis());
+        notification.setType(NotificationTypeEnum.LIKE_COMMENT.getType());
+        notification.setOuterId(dbComment.getId());
+        notification.setNotifier(user.getId());
+        notification.setStatus(NotificationStatusEnum.UNREAD.getStatus());
+        notification.setReceiver(dbComment.getCommentator());
+        notification.setNotifierName(user.getName());
+        notification.setOuterTitle(dbComment.getContent());
+        notificationMapper.insert(notification);
+    }
 }
