@@ -127,7 +127,9 @@ public class CommentService {
         if (dbComment == null) {
             throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
         }
-
+        if(user.getId()==dbComment.getCommentator()){
+            return;
+        }
         //创建通知
         Notification notification = new Notification();
         notification.setGmtCreate(System.currentTimeMillis());
